@@ -1,0 +1,19 @@
+###################
+# dev
+###################
+
+server.port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://hanex-dev-database.cluster-coherc69qjmr.ap-northeast-2.rds.amazonaws.com:5432/hanexdb
+    driverClassName: org.postgresql.Driver
+    username: hanexuser
+    password: hanex1234!!
+  redis:
+    host: localhost
+    port: 6001
+
+logging:
+  config: classpath:log4j2-dev.xml
+

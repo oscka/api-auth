@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - starter.yaml
+  - starter-ingress.yaml
+images:
+  - name: jei0486/starter
+    newTag: v1
