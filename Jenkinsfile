@@ -18,7 +18,7 @@ pipeline {
                         branches: [[name: "refs/tags/${TAG}"]]],
                     poll: false  
                 script{
-                    docker.withRegistry("192.168.41.50:5000","imageRegistry-credential"){   //credential 이름이 jenkins에 등록된 이름과 동일해야 함, jenkins에 docker deploy 권한 필요
+                    docker.withRegistry("http://192.168.41.50:5000","imageRegistry-credential"){   //credential 이름이 jenkins에 등록된 이름과 동일해야 함, jenkins에 docker deploy 권한 필요
                         sh "pwd"
                         sh "chmod u+x ./gradlew"
                         sh "skaffold build -p dev -t ${TAG}"
