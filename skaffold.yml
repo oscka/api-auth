@@ -7,12 +7,12 @@ profiles:
         push: true # false는 로컬 테스트
       artifacts:
         # - image: jei0486/starter # on dev server (docker hub에 push하고 실행)
-        - image: 192.168.41.50:5000/api-auth
+        - image: oscka/api-auth
           jib:
             args:
               - -DskipTests
               - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev"  # jib 플러그인을 통해 dev profile에 대해 수행
-            fromImage: 192.168.41.50:5000/openjdk:17-jdk-slim       # 실행을 위한 runtime image
+            fromImage: library/openjdk:17-jdk-slim       # 실행을 위한 runtime image
     deploy:
       kustomize:
         paths:
