@@ -12,7 +12,7 @@ profiles:
             args:
               - -DskipTests
               - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev"  # jib 플러그인을 통해 dev profile에 대해 수행
-            fromImage: library/openjdk:17-jdk-slim       # 실행을 위한 runtime image
+            fromImage: 192.168.41.50:5000/openjdk:17-jdk-slim       # 실행을 위한 runtime image
     deploy:
       kustomize:
         paths:
