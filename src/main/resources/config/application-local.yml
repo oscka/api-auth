@@ -5,10 +5,10 @@ server.port: 18080
 
 spring:
   datasource:
-    url: jdbc:postgresql://hanex-dev-rds-temp-708b1e60bce84582.elb.ap-northeast-2.amazonaws.com:5432/hanexdb
+    url: jdbc:postgresql://192.168.41.50:5432/openmsadb
     driverClassName: org.postgresql.Driver
-    username: hanexuser
-    password: hanex1234!!
+    username: openmsauser
+    password: open1234!!
     # driver-class-name: org.h2.Driver
     # username: sa
     # password:
