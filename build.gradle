@@ -5,9 +5,9 @@ plugins {
 	id 'com.google.cloud.tools.jib' version '3.3.0'
 }
 
-group = 'com.hanex'
+group = 'com.osckorea'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = JavaVersion.VERSION_17
 
 configurations {
 	compileOnly {

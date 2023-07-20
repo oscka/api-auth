@@ -30,7 +30,7 @@ JWT 토큰은 base64 로 인코딩돼있는데, 해당 토큰을 [jwt.io](https:
 {
   "iat": 1685610592,
   "exp": 1685696992,
-  "iss": "hanex",
+  "iss": "osckorea",
   "aud": "user",
   "sub": "e2524fbe-9166-47fc-b63e-761bb4ab7c4f",
   "loginId": "admin",

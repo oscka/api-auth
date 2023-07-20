@@ -30,7 +30,7 @@
             <AppenderRef ref="Console"  level="OFF"/>
         </Logger>
 
-        <Logger name="com.hanex.auth" level="DEBUG" additivity="false">
+        <Logger name="com.osckorea.openmsa.auth" level="DEBUG" additivity="false">
             <AppenderRef ref="Console" />
         </Logger>
 

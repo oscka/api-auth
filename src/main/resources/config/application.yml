@@ -61,5 +61,5 @@ jwt:
   refreshToken:
     # 1000 * 60 * 60* 24 = 86400000
     expiration: 86400000 # 리프레시 토큰 만료 시간 (초 단위)
-  issuer: hanex # JWT 발급자(issuer)
+  issuer: osckorea # JWT 발급자(issuer)
   audience: user # JWT 대상(audience)
